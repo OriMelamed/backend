@@ -28,6 +28,7 @@ constructor(@InjectModel(Task.name) private taskModel: Model<Task>) {}
   }
 
   remove(id: string) {
-    return this.taskModel.deleteOne({_id: id});
+    return this.taskModel.findByIdAndDelete(id);
+
   }
 }
