@@ -4,7 +4,7 @@ import {MongooseModule} from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://ori-todo:ori123456@databasenode.xufst.mongodb.net/?retryWrites=true&w=majority&appName=databasenode'),
+    MongooseModule.forRoot('mongodb+srv://@databasenode.xufst.mongodb.net/?retryWrites=true&w=majority&appName=databasenode'),
     TasksModule
   ],
   controllers: [],
